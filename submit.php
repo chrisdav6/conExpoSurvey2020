@@ -1,6 +1,5 @@
 <?php
 
-  $email = $_POST['email'];
   $currentCustomer = $_POST['currentCustomer'];
   $compaction = $_POST['compaction'];
   $density = $_POST['density'];
@@ -14,11 +13,11 @@
   $siteBrand = $_POST['siteBrand'];
   $bluetoothCapable = $_POST['bluetoothCapable'];
   $reviewData = $_POST['reviewData'];
+  $email = $_POST['email'];
 
   //Main semicolon seperated data
   $data = [
   "\n",
-  " ${email};",
   " ${currentCustomer};",
   " ${compaction};",
   " ${density};",
@@ -31,13 +30,13 @@
   " ${siteManagement};",
   " ${siteBrand};",
   " ${bluetoothCapable};",
-  " ${reviewData}"
+  " ${reviewData};",
+  " ${email};"
   ];
 
   //Backup Data in the event main datas order gets jumbled
   $data2 = [ 
   "\n",
-  "Email Address: ${email}",
   "Current Customer: ${currentCustomer}",
   "Performs Compaction: ${compaction}",
   "Performs Density Testing: ${density}",
@@ -50,7 +49,8 @@
   "Uses Site Management Systems: ${siteManagement}",
   "Uses Site Management Systems Brand: ${siteBrand}",
   "Would like bluetooth control: ${bluetoothCapable}",
-  "Would like to review data remotely: ${reviewData}"
+  "Would like to review data remotely: ${reviewData}",
+  "Email Address: ${email}"
   ];
 
   //Save Main Data
