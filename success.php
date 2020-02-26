@@ -16,8 +16,8 @@
     <div class="row justify-content-center">
       <div class="col-8 col-lg-6">
         <img class="img-fluid" src="./img/transtech-logo-bold-type.png" alt="TransTech Systems Logo">
-        <h2 class="sub-text ml-3">Thank you for your feedback!</h2>
-        <a class="btn btn-lg btn-warning ml-3 mt-5" href="./index.php">&lt;-Back to form</a>
+        <h2 class="sub-text  mt-5">Thank you for your feedback!</h2>
+        <a class="btn btn-lg btn-warning success-btn" href="./index.php">&lt;-Back to form</a>
       </div>
     </div>
   </div>
